@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3251F0C2-BE1B-4C22-AABF-2563E352ED90}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>MarlinImit</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\module\termistor;E:\Evg\Imit\ImitCommon\mbed\capi;E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\Pins;E:\Evg\Imit\ImitCommon;E:\Evg\Imit\ImitCommon\mbed;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\module\termistor;E:\Evg\Imit\ImitCommon\mbed\capi;E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\Pins;E:\Evg\Imit\ImitCommon;E:\Evg\Imit\ImitCommon\mbed;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ImitCommon\LPC17xx.h" />
+    <ClInclude Include="..\..\..\ImitCommon\TCPconnection.hpp" />
+    <ClInclude Include="..\..\..\ImitCommon\UDPconnection.hpp" />
+    <ClInclude Include="boards.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="config_0.h" />
+    <ClInclude Include="core\boards.h" />
+    <ClInclude Include="core\enum.h" />
+    <ClInclude Include="core\language.h" />
+    <ClInclude Include="core\macros.h" />
+    <ClInclude Include="inc\Conditionals_post.h" />
+    <ClInclude Include="inc\MarlinConfig.h" />
+    <ClInclude Include="inc\SanityCheck.h" />
+    <ClInclude Include="macros.h" />
+    <ClInclude Include="Marlin.h" />
+    <ClInclude Include="pinexist.h" />
+    <ClInclude Include="pins.h" />
+    <ClInclude Include="Pins\pins.h" />
+    <ClInclude Include="Pins\pins_LPC1768.h" />
+    <ClInclude Include="Pins\pins_LPC1768_LS_MINI.h" />
+    <ClInclude Include="SiM.hpp" />
+    <ClInclude Include="SimTempModel.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ImitCommon\Comterm.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\module\termistor;E:\Evg\Imit\ImitCommon\mbed\capi;E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\Pins;E:\Evg\Imit\ImitCommon;E:\Evg\Imit\ImitCommon\mbed;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\gpio_api.c" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\pinmap.c" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\pinmap_common.c" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\semihost_api.c" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\serial_api.c" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileBase.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileLike.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FilePath.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileSystemLike.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FunctionPointer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\LocalFileSystem.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\SerialMbed.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\stdio.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\mbed\Stream.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\SiM_VirtHandle.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\TCPconnection.cpp" />
+    <ClCompile Include="..\..\..\ImitCommon\UDPconnection.cpp" />
+    <ClCompile Include="core\serial.cpp" />
+    <ClCompile Include="core\utility.cpp" />
+    <ClCompile Include="gcode\calibrate\G28.cpp" />
+    <ClCompile Include="gcode\calibrate\G33.cpp" />
+    <ClCompile Include="gcode\calibrate\M100.cpp" />
+    <ClCompile Include="gcode\calibrate\M48.cpp" />
+    <ClCompile Include="gcode\calibrate\M665.cpp" />
+    <ClCompile Include="gcode\calibrate\M666.cpp" />
+    <ClCompile Include="gcode\calibrate\M852.cpp" />
+    <ClCompile Include="gcode\config\M200-M205.cpp" />
+    <ClCompile Include="gcode\config\M218.cpp" />
+    <ClCompile Include="gcode\config\M220.cpp" />
+    <ClCompile Include="gcode\config\M221.cpp" />
+    <ClCompile Include="gcode\config\M301.cpp" />
+    <ClCompile Include="gcode\config\M302.cpp" />
+    <ClCompile Include="gcode\config\M304.cpp" />
+    <ClCompile Include="gcode\config\M43.cpp" />
+    <ClCompile Include="gcode\config\M540.cpp" />
+    <ClCompile Include="gcode\config\M92.cpp" />
+    <ClCompile Include="gcode\control\M108_M112_M410.cpp" />
+    <ClCompile Include="gcode\control\M111.cpp" />
+    <ClCompile Include="gcode\control\M120_M121.cpp" />
+    <ClCompile Include="gcode\control\M17_M18_M84.cpp" />
+    <ClCompile Include="gcode\control\M211.cpp" />
+    <ClCompile Include="gcode\control\M226.cpp" />
+    <ClCompile Include="gcode\control\M280.cpp" />
+    <ClCompile Include="gcode\control\M3-M5.cpp" />
+    <ClCompile Include="gcode\control\M350_M351.cpp" />
+    <ClCompile Include="gcode\control\M380_M381.cpp" />
+    <ClCompile Include="gcode\control\M400.cpp" />
+    <ClCompile Include="gcode\control\M42.cpp" />
+    <ClCompile Include="gcode\control\M605.cpp" />
+    <ClCompile Include="gcode\control\M80_M81.cpp" />
+    <ClCompile Include="gcode\control\M85.cpp" />
+    <ClCompile Include="gcode\control\M999.cpp" />
+    <ClCompile Include="gcode\control\T.cpp" />
+    <ClCompile Include="gcode\eeprom\M500-M504.cpp" />
+    <ClCompile Include="gcode\feature\caselight\M355.cpp" />
+    <ClCompile Include="gcode\gcode.cpp" />
+    <ClCompile Include="gcode\geometry\G17-G19.cpp" />
+    <ClCompile Include="gcode\geometry\G53-G59.cpp" />
+    <ClCompile Include="gcode\geometry\G92.cpp" />
+    <ClCompile Include="gcode\geometry\M206_M428.cpp" />
+    <ClCompile Include="gcode\host\M110.cpp" />
+    <ClCompile Include="gcode\host\M113.cpp" />
+    <ClCompile Include="gcode\host\M114.cpp" />
+    <ClCompile Include="gcode\host\M115.cpp" />
+    <ClCompile Include="gcode\host\M118.cpp" />
+    <ClCompile Include="gcode\host\M119.cpp" />
+    <ClCompile Include="gcode\lcd\M0_M1.cpp" />
+    <ClCompile Include="gcode\lcd\M117.cpp" />
+    <ClCompile Include="gcode\lcd\M145.cpp" />
+    <ClCompile Include="gcode\lcd\M250.cpp" />
+    <ClCompile Include="gcode\lcd\M300.cpp" />
+    <ClCompile Include="gcode\lcd\M73.cpp" />
+    <ClCompile Include="gcode\motion\G0_G1.cpp" />
+    <ClCompile Include="gcode\motion\G2_G3.cpp" />
+    <ClCompile Include="gcode\motion\G4.cpp" />
+    <ClCompile Include="gcode\motion\G5.cpp" />
+    <ClCompile Include="gcode\motion\M290.cpp" />
+    <ClCompile Include="gcode\parser.cpp" />
+    <ClCompile Include="gcode\queue.cpp" />
+    <ClCompile Include="gcode\sdcard\M20-M30_M32-M34_M928.cpp" />
+    <ClCompile Include="gcode\stats\M31.cpp" />
+    <ClCompile Include="gcode\stats\M75-M78.cpp" />
+    <ClCompile Include="gcode\temperature\M104_M109.cpp" />
+    <ClCompile Include="gcode\temperature\M105.cpp" />
+    <ClCompile Include="gcode\temperature\M106_M107.cpp" />
+    <ClCompile Include="gcode\temperature\M140_M190.cpp" />
+    <ClCompile Include="gcode\temperature\M155.cpp" />
+    <ClCompile Include="gcode\temperature\M303.cpp" />
+    <ClCompile Include="gcode\units\G20_G21.cpp" />
+    <ClCompile Include="gcode\units\M149.cpp" />
+    <ClCompile Include="gcode\units\M82_M83.cpp" />
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC1768.cpp" />
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC1768_TMP03.cpp" />
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC_Serial.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\HAL_timers_LPC1768.cpp" />
+    <ClCompile Include="HAL\HAL_LPC\persistent_store.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="IAP.c" />
+    <ClCompile Include="libs\buzzer.cpp" />
+    <ClCompile Include="libs\stopwatch.cpp" />
+    <ClCompile Include="Marlin.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="MarlinImit.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="Marlin_main.cpp" />
+    <ClCompile Include="Master.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Master_tcp.cpp" />
+    <ClCompile Include="Master_udp.cpp">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\Evg\Imit\Marlin\MarlinImit\MarlinImit\module;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="module\configuration_store.cpp" />
+    <ClCompile Include="module\endstops.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="module\motion.cpp" />
+    <ClCompile Include="module\planner.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="module\stepper.cpp" />
+    <ClCompile Include="module\stepper_indirection.cpp" />
+    <ClCompile Include="module\temperature.cpp">
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</PreprocessToFile>
+    </ClCompile>
+    <ClCompile Include="module\tool_change.cpp" />
+    <ClCompile Include="myBuffer.cpp" />
+    <ClCompile Include="sd\cardreader.cpp" />
+    <ClCompile Include="sd\Sd2Card.cpp" />
+    <ClCompile Include="sd\SdBaseFile.cpp" />
+    <ClCompile Include="sd\SdFile.cpp" />
+    <ClCompile Include="sd\SdVolume.cpp" />
+    <ClCompile Include="SiM.cpp" />
+    <ClCompile Include="SiMconfig.cpp" />
+    <ClCompile Include="SimTempModel.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="system_LPC17xx.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

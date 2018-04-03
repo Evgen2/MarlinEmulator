@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Common">
+      <UniqueIdentifier>{53a2b9c4-22bd-41be-b16f-1d6f865ce7ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\HAL">
+      <UniqueIdentifier>{0f6aff57-abfa-4c86-8356-c0e22d9199e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Pins">
+      <UniqueIdentifier>{576146f9-556d-451b-9491-58ebd14601c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\inc">
+      <UniqueIdentifier>{69b896ba-8b16-444a-b1ef-06cc69fa9410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\core">
+      <UniqueIdentifier>{9d65a7a8-f729-4bcd-9799-c0fd396a74df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mbed">
+      <UniqueIdentifier>{c2893f46-4cb1-41b7-8a23-f130fa67fee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\mbed">
+      <UniqueIdentifier>{2612b359-a7e4-4866-acab-b4bbf66dd292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Common\mbed\capi">
+      <UniqueIdentifier>{97a6c77f-8160-4780-befa-1d307a1c04e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\module">
+      <UniqueIdentifier>{d4043e75-6f75-44bf-80d0-a025e58839d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\core">
+      <UniqueIdentifier>{51ad8406-7db7-4f0e-89b2-b2137e7e6325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode">
+      <UniqueIdentifier>{9b10a8fe-02d6-410c-b152-e7aab0673c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\control">
+      <UniqueIdentifier>{6382aaa0-7612-44a8-ba75-4a22bc5f2b33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\feature">
+      <UniqueIdentifier>{ec965884-7438-4f8d-a1bb-a2de1c82b4b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\feature\caselight">
+      <UniqueIdentifier>{7681af88-b285-4e53-893b-68d7279f24e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\eeprom">
+      <UniqueIdentifier>{a5eda32c-811d-4491-94ca-d8b8d2dfc886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\geometry">
+      <UniqueIdentifier>{d8ed7c0d-cb6e-436e-a96d-6d84ee2f200b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\temperature">
+      <UniqueIdentifier>{d71d92c3-f1a7-4e27-9307-e08096e212ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\config">
+      <UniqueIdentifier>{c7e644d8-94c1-46c9-a9ad-998ea49c80aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\host">
+      <UniqueIdentifier>{9125e010-571b-4b27-8554-b150a4b5760a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\lcd">
+      <UniqueIdentifier>{63d0c26f-27e2-4902-bb4a-ef201e6968d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\units">
+      <UniqueIdentifier>{7462b4c5-b2f9-40d9-a7a3-aba3ef54cd69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\stats">
+      <UniqueIdentifier>{237e6a10-9830-4dda-b7ea-c85ee8deb606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\calibrate">
+      <UniqueIdentifier>{44c2ecfe-70ba-45aa-8d3f-52136ed44771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\motion">
+      <UniqueIdentifier>{cc926282-010b-4bdb-8a32-2a17501a72f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs">
+      <UniqueIdentifier>{2c6c1ddd-8285-4689-9627-478710d68835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gcode\sdcard">
+      <UniqueIdentifier>{dd458e27-8762-49e7-8541-43389c26d035}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sd">
+      <UniqueIdentifier>{392cf351-15b9-4971-b75e-ecbcbafe9043}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pins.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pins\pins_LPC1768.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="boards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Marlin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Pins\pins.h">
+      <Filter>Header Files\Pins</Filter>
+    </ClInclude>
+    <ClInclude Include="Pins\pins_LPC1768_LS_MINI.h">
+      <Filter>Header Files\Pins</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\MarlinConfig.h">
+      <Filter>Header Files\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\SanityCheck.h">
+      <Filter>Header Files\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="core\boards.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\enum.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\language.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\macros.h">
+      <Filter>Header Files\core</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\Conditionals_post.h">
+      <Filter>Header Files\inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ImitCommon\LPC17xx.h">
+      <Filter>Header Files\mbed</Filter>
+    </ClInclude>
+    <ClInclude Include="SiM.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ImitCommon\TCPconnection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ImitCommon\UDPconnection.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pinexist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimTempModel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MarlinImit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\Comterm.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\SiM_VirtHandle.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\UDPconnection.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Master.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="system_LPC17xx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SiM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Marlin_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC_Serial.cpp">
+      <Filter>Source Files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\gpio_api.c">
+      <Filter>Source Files\Common\mbed\capi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\pinmap.c">
+      <Filter>Source Files\Common\mbed\capi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\Stream.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileLike.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileBase.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="myBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\serial_api.c">
+      <Filter>Source Files\Common\mbed\capi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\pinmap_common.c">
+      <Filter>Source Files\Common\mbed\capi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\LocalFileSystem.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\stdio.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\capi\semihost_api.c">
+      <Filter>Source Files\Common\mbed\capi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FunctionPointer.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FilePath.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\FileSystemLike.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="Master_tcp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Master_udp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\HAL_timers_LPC1768.cpp">
+      <Filter>Source Files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC1768.cpp">
+      <Filter>Source Files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\HAL_LPC1768_TMP03.cpp">
+      <Filter>Source Files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="module\stepper.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="module\endstops.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="module\motion.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="Marlin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\planner.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="core\serial.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\gcode.cpp">
+      <Filter>Source Files\gcode</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\parser.cpp">
+      <Filter>Source Files\gcode</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\queue.cpp">
+      <Filter>Source Files\gcode</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M999.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\T.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\feature\caselight\M355.cpp">
+      <Filter>Source Files\gcode\feature\caselight</Filter>
+    </ClCompile>
+    <ClCompile Include="module\configuration_store.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\geometry\M206_M428.cpp">
+      <Filter>Source Files\gcode\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M400.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M3-M5.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M17_M18_M84.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M42.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M80_M81.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M85.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M108_M112_M410.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M111.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M120_M121.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M211.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M226.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M280.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M350_M351.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M380_M381.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\control\M605.cpp">
+      <Filter>Source Files\gcode\control</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M104_M109.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M105.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M106_M107.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M140_M190.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M155.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\temperature\M303.cpp">
+      <Filter>Source Files\gcode\temperature</Filter>
+    </ClCompile>
+    <ClCompile Include="module\temperature.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M43.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M92.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M200-M205.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M218.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M220.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M221.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M301.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M302.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M304.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\config\M540.cpp">
+      <Filter>Source Files\gcode\config</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M110.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M113.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M114.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M115.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M118.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\host\M119.cpp">
+      <Filter>Source Files\gcode\host</Filter>
+    </ClCompile>
+    <ClCompile Include="HAL\HAL_LPC\persistent_store.cpp">
+      <Filter>Source Files\HAL</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M0_M1.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M73.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M117.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M145.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M250.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\lcd\M300.cpp">
+      <Filter>Source Files\gcode\lcd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\units\G20_G21.cpp">
+      <Filter>Source Files\gcode\units</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\units\M82_M83.cpp">
+      <Filter>Source Files\gcode\units</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\units\M149.cpp">
+      <Filter>Source Files\gcode\units</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\stats\M31.cpp">
+      <Filter>Source Files\gcode\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\stats\M75-M78.cpp">
+      <Filter>Source Files\gcode\stats</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\geometry\G17-G19.cpp">
+      <Filter>Source Files\gcode\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\geometry\G53-G59.cpp">
+      <Filter>Source Files\gcode\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\geometry\G92.cpp">
+      <Filter>Source Files\gcode\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\G28.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\G33.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\M48.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\M100.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\M665.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\M666.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\calibrate\M852.cpp">
+      <Filter>Source Files\gcode\calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\motion\G0_G1.cpp">
+      <Filter>Source Files\gcode\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\motion\G2_G3.cpp">
+      <Filter>Source Files\gcode\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\motion\G4.cpp">
+      <Filter>Source Files\gcode\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\motion\G5.cpp">
+      <Filter>Source Files\gcode\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\motion\M290.cpp">
+      <Filter>Source Files\gcode\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="core\utility.cpp">
+      <Filter>Source Files\core</Filter>
+    </ClCompile>
+    <ClCompile Include="module\tool_change.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\stopwatch.cpp">
+      <Filter>Source Files\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="IAP.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\mbed\SerialMbed.cpp">
+      <Filter>Source Files\Common\mbed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImitCommon\TCPconnection.cpp">
+      <Filter>Source Files\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="SiMconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimTempModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\sdcard\M20-M30_M32-M34_M928.cpp">
+      <Filter>Source Files\gcode\sdcard</Filter>
+    </ClCompile>
+    <ClCompile Include="sd\cardreader.cpp">
+      <Filter>Source Files\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\buzzer.cpp">
+      <Filter>Source Files\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="sd\SdBaseFile.cpp">
+      <Filter>Source Files\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="sd\Sd2Card.cpp">
+      <Filter>Source Files\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="sd\SdVolume.cpp">
+      <Filter>Source Files\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="sd\SdFile.cpp">
+      <Filter>Source Files\sd</Filter>
+    </ClCompile>
+    <ClCompile Include="gcode\eeprom\M500-M504.cpp">
+      <Filter>Source Files\gcode\eeprom</Filter>
+    </ClCompile>
+    <ClCompile Include="module\stepper_indirection.cpp">
+      <Filter>Source Files\module</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

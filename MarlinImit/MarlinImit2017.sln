@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MarlinImit", "MarlinImit\MarlinImit.vcxproj", "{3251F0C2-BE1B-4C22-AABF-2563E352ED90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3251F0C2-BE1B-4C22-AABF-2563E352ED90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3251F0C2-BE1B-4C22-AABF-2563E352ED90}.Debug|Win32.Build.0 = Debug|Win32
+		{3251F0C2-BE1B-4C22-AABF-2563E352ED90}.Release|Win32.ActiveCfg = Release|Win32
+		{3251F0C2-BE1B-4C22-AABF-2563E352ED90}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

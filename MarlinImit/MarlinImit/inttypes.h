@@ -1,0 +1,2 @@
+/* inttypes.h */
+/* fake */

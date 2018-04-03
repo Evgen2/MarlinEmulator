@@ -13,6 +13,7 @@ https://github.com/ARMmbed/mbed-os
 
 
 Features support
+0. console application
 1. ip connection on 8876 port
 2. EEPROM read/write emulation with file eeprom.dat
 3. Physcial parameters in file MarlinImit.cfg
